@@ -47,9 +47,9 @@ function TransactionHistory() {
   return (
     <div className="w-full">
       {/* Filter Section */}
-      <div className="rounded-xl bg-white p-6 border border-gray-200 mb-10">
+      <div className="rounded-xl bg-green-50 p-6 border border-gray-200 mb-10">
         <h2 className="text-xl font-semibold mb-4 flex items-center gap-2">
-          <ArrowDownUp className="text-blue-500" size={20} /> Filter Transactions
+          <ArrowDownUp className="text-gray-1000" size={20} /> Filter Transactions
         </h2>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
@@ -59,7 +59,7 @@ function TransactionHistory() {
             placeholder="Search by date (YYYY-MM-DD), category or description..."
             value={search}
             onChange={(e) => setSearch(e.target.value)}
-            className="border border-gray-300 rounded-xl px-4 py-2.5 w-full focus:outline-none focus:ring-2 focus:ring-blue-500"
+            className="border border-gray-300 rounded-xl px-4 py-2.5 w-full focus:outline-none focus:ring-2 focus:ring-gray-1000"
           />
 
           {/* Transaction Type */}
@@ -68,7 +68,7 @@ function TransactionHistory() {
             <select
               value={typeFilter}
               onChange={(e) => setTypeFilter(e.target.value)}
-              className="border border-gray-300 rounded-xl px-4 py-2.5 w-full focus:outline-none focus:ring-2 focus:ring-blue-500"
+              className="border border-gray-300 rounded-xl px-4 py-2.5 w-full focus:outline-none focus:ring-2 focus:ring-gray-1000"
             >
               <option value="All">All Types</option>
               <option value="Income">Income</option>
@@ -82,7 +82,7 @@ function TransactionHistory() {
             <select
               value={sortBy}
               onChange={(e) => setSortBy(e.target.value)}
-              className="border border-gray-300 rounded-xl px-4 py-2.5 w-full focus:outline-none focus:ring-2 focus:ring-blue-500"
+              className="border border-gray-300 rounded-xl px-4 py-2.5 w-full focus:outline-none focus:ring-2 focus:ring-gray-1000"
             >
               <option value="Date">Date</option>
               <option value="Amount">Amount</option>
@@ -93,12 +93,12 @@ function TransactionHistory() {
       </div>
 
       {/* Transaction History Section */}
-      <div className="rounded-xl bg-white p-6 border border-gray-200">
+      <div className="rounded-xl bg-green-50 p-6 border border-gray-200">
         <h3 className="text-2xl font-semibold mb-4">Transaction History</h3>
 
         <div className="flex flex-col gap-4">
           {filtered.length === 0 ? (
-            <p className="text-center text-gray-500">No transactions found.</p>
+            <p className="text-center text-gray-1000">No transactions found.</p>
           ) : (
             filtered.map((item, index) => (
               <TransactionCard item={item} key={index} />

@@ -10,7 +10,7 @@ const SkeletonLoader = () => {
       {/* Budget Cards */}
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
         {[...Array(3)].map((_, i) => (
-          <div key={i} className="bg-white shadow rounded-lg p-4 space-y-4">
+          <div key={i} className="bg-green-50 shadow rounded-lg p-4 space-y-4">
             <div className="h-4 bg-gray-300 rounded w-1/2"></div>
             <div className="h-6 bg-gray-300 rounded w-full"></div>
             <div className="h-3 bg-gray-200 rounded w-3/4"></div>
@@ -24,7 +24,7 @@ const SkeletonLoader = () => {
       {/* Transactions List */}
       <div className="space-y-3">
         {[...Array(2)].map((_, i) => (
-          <div key={i} className="flex justify-between items-center bg-white p-4 shadow rounded">
+          <div key={i} className="flex justify-between items-center bg-green-50 p-4 shadow rounded">
             <div className="space-y-2">
               <div className="h-4 bg-gray-300 rounded w-40"></div>
               <div className="h-3 bg-gray-200 rounded w-24"></div>

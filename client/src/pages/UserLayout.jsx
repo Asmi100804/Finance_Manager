@@ -58,7 +58,7 @@ export default function UserLayout() {
       {/* Sidebar */}
       <aside
         ref={sidebarRef}
-        className={`fixed md:static z-40 top-0 left-0 h-full w-64 bg-white border-r border-gray-300 
+        className={`fixed md:static z-40 top-0 left-0 h-full w-64 bg-green-50 border-r border-gray-300 
         transform transition-transform duration-300 ease-in-out
         ${isOpen ? "translate-x-0" : "-translate-x-full"} md:translate-x-0`}
       >
@@ -85,8 +85,8 @@ export default function UserLayout() {
               to={href}
               className={`flex items-center gap-3 py-3 px-2.5 font-semibold rounded-lg border
               ${location.pathname === href
-                  ? "bg-blue-50 text-blue-700 border-blue-200"
-                  : "border-transparent text-gray-700 hover:bg-gray-100"
+                  ? "bg-blue-100 text-blue-700 border-blue-200"
+                  : "border-transparent text-gray-700 hover:bg-blue-100"
                 }`}
             >
               {icon} <span>{name}</span>
@@ -98,7 +98,7 @@ export default function UserLayout() {
       {/* Main Content */}
       <div className="flex-1 flex flex-col h-full">
         {/* Header */}
-        <header className="sticky top-0 z-30 bg-white border-b border-gray-200 px-4 py-4 flex items-center justify-between gap-4">
+        <header className="sticky top-0 z-30 bg-green-50 border-b border-gray-200 px-4 py-4 flex items-center justify-between gap-4">
           <button
             ref={toggleRef}
             className="md:hidden text-gray-800"
@@ -109,7 +109,7 @@ export default function UserLayout() {
 
           <div className="flex items-center justify-between md:w-full gap-4">
             {/* Search */}
-            <div className="hidden md:flex items-center border pl-3 gap-2 bg-white border-gray-300 h-[46px] rounded-md w-full max-w-md">
+            <div className="hidden md:flex items-center border pl-3 gap-2 bg-green-50 border-gray-300 h-[46px] rounded-md w-full max-w-md">
               <input
                 type="text"
                 placeholder="Search transactions..."
@@ -128,7 +128,7 @@ export default function UserLayout() {
               </button>
 
               {showUserDropdown && (
-                <div className="absolute right-0 mt-2 w-48 bg-white rounded-lg border border-gray-200 p-4 z-50">
+                <div className="absolute right-0 mt-2 w-48 bg-green-50 rounded-lg border border-gray-200 p-4 z-50">
                   <p className="text-sm font-semibold text-gray-800 mb-2">{user.email}</p>
                   <button
                     className="text-red-500 cursor-pointer bg-red-50 border w-full px-3 py-2 rounded border-red-500 text-sm font-medium"
@@ -143,7 +143,7 @@ export default function UserLayout() {
         </header>
 
         {/* Scrollable Page Content */}
-        <main className="p-6 bg-gray-50 flex-1 overflow-y-auto">
+        <main className="p-6 bg-blue-100 flex-1 overflow-y-auto">
           {loading ? <SkeletonLoader /> : <Outlet />}
         </main>
       </div>

@@ -34,11 +34,11 @@ function BudgetCardDisplay({ item }) {
     }
 
     return (
-        <div className='bg-gray-50 flex flex-col md:flex-row justify-between items-start md:items-center px-5 py-4 rounded-xl'>
+        <div className='bg-blue-100 flex flex-col md:flex-row justify-between items-start md:items-center px-5 py-4 rounded-xl'>
   
             <div>
                 <p className='font-semibold text-xl'>{item.category}</p>
-                <p className='text-sm text-black/70'>Monthly Budget</p>
+                <p className='text-sm text-gray-700'>Monthly Budget</p>
             </div>
 
             <div className='flex items-center justify-between gap-4 mt-3 md:mt-0'>
@@ -55,14 +55,14 @@ function BudgetCardDisplay({ item }) {
                 <div className='flex gap-2'>
                     {isEditing ? (
                         <button
-                            className='hover:bg-green-50 text-green-600 p-1 rounded-md border border-gray-200 hover:border-green-400'
+                            className='hover:bg-gray-100 text-green-600 p-1 rounded-md border border-gray-200 hover:border-green-400'
                             onClick={handleSave}
                         >
                             <Save size={20} />
                         </button>
                     ) : (
                         <button
-                            className='hover:bg-blue-50 text-blue-500 p-1 rounded-md border border-gray-200 hover:border-blue-300'
+                            className='hover:bg-gray-100 text-gray-1000 p-1 rounded-md border border-gray-200 hover:border-blue-300'
                             onClick={() => setIsEditing(true)}
                         >
                             <SquarePen size={20} />

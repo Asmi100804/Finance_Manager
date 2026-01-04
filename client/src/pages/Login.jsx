@@ -44,12 +44,12 @@ function Login() {
   };
 
   return (
-    <div className='flex items-center justify-center min-h-screen px-6 sm:px-0 bg-gradient-to-br from-gray-100 to-white'>
-      <div className='bg-white p-8 rounded-xl shadow-xl w-full sm:w-96 text-gray-700'>
+    <div className='flex items-center justify-center min-h-screen px-6 sm:px-0 bg-gradient-to-br from-gray-100 to-green-50'>
+      <div className='bg-green-50 p-8 rounded-xl shadow-xl w-full sm:w-96 text-gray-700'>
 
         {/* Logo and Title */}
         <div className='border-b border-gray-200 px-2 py-6 mb-6'>
-          <div className='flex justify-center gap-2 items-center text-3xl font-black text-green-500'>
+          <div className='flex justify-center gap-2 items-center text-3xl font-black text-gray-1000'>
             <img src="./logo.png" className="size-12" alt="Logo" />
             <h1>CashFlowX</h1>
           </div>
@@ -60,7 +60,7 @@ function Login() {
         <h2 className='text-3xl font-semibold text-gray-900 text-center mb-4'>
           {state === "sign-up" ? "Create account" : "Login"}
         </h2>
-        <p className='text-center text-sm mb-6 text-gray-500'>
+        <p className='text-center text-sm mb-6 text-gray-1000'>
           {state === "sign-up" ? "Create your account" : "Login to your account"}
         </p>
 
@@ -76,7 +76,7 @@ function Login() {
             <div className='mb-4'>
               <input
                 type="text"
-                className="w-full p-3 border border-gray-300 rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
+                className="w-full p-3 border border-gray-300 rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-gray-1000"
                 placeholder='Full Name'
                 required
                 onChange={(e) => setName(e.target.value)}
@@ -89,7 +89,7 @@ function Login() {
           <div className='mb-4'>
             <input
               type="email"
-              className="w-full p-3 border border-gray-300 rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
+              className="w-full p-3 border border-gray-300 rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-gray-1000"
               placeholder='Email id'
               required
               onChange={(e) => setEmail(e.target.value)}
@@ -101,7 +101,7 @@ function Login() {
           <div className='mb-4'>
             <input
               type="password"
-              className="w-full p-3 border border-gray-300 rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
+              className="w-full p-3 border border-gray-300 rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-gray-1000"
               placeholder='Password'
               required
               onChange={(e) => setPassword(e.target.value)}
@@ -113,7 +113,7 @@ function Login() {
           <button
             type="submit"
             disabled={loading}
-            className='w-full py-3 rounded-lg bg-blue-600 text-white font-semibold hover:bg-blue-700 transition-all disabled:opacity-50'
+            className='w-full py-3 rounded-lg bg-blue-600 text-green-50 font-semibold hover:bg-blue-700 transition-all disabled:opacity-50'
           >
             {loading ? "Please wait..." : state === "sign-up" ? "Sign Up" : "Login"}
           </button>
@@ -122,7 +122,7 @@ function Login() {
         {/* Switch between Login and Sign Up */}
         <div className='text-center mt-4'>
           {state === "sign-up" ? (
-            <p className='text-sm text-gray-500'>
+            <p className='text-sm text-gray-1000'>
               Already have an account?{" "}
               <span
                 className='text-blue-600 cursor-pointer hover:underline'
@@ -132,7 +132,7 @@ function Login() {
               </span>
             </p>
           ) : (
-            <p className='text-sm text-gray-500'>
+            <p className='text-sm text-gray-1000'>
               Don't have an account?{" "}
               <span
                 className='text-blue-600 cursor-pointer hover:underline'

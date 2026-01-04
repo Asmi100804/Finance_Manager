@@ -14,11 +14,11 @@ function TransactionCard({ item }) {
     };
 
     return (
-        <div className="flex justify-between items-center bg-gray-50 px-4 py-4 rounded-xl">
+        <div className="flex justify-between items-center bg-blue-100 px-4 py-4 rounded-xl">
             <div>
                 <h4 className="font-bold text-lg text-black/80">{item.description}</h4>
-                <p className="text-sm text-gray-500">{item.category}</p>
-                <div className="flex items-center text-sm text-gray-400 mt-1">
+                <p className="text-sm text-gray-1000">{item.category}</p>
+                <div className="flex items-center text-sm text-gray-700 mt-1">
                     <CalendarDays size={14} className="mr-1" />
                     {new Date(item.date).toLocaleString()}
                 </div>
@@ -33,7 +33,7 @@ function TransactionCard({ item }) {
                     >
                         ₹ {parseFloat(item.amount).toFixed(2)}
                     </p>
-                    <p className="text-sm text-gray-500">{item.type}</p>
+                    <p className="text-sm text-gray-1000">{item.type}</p>
                 </div>
 
                 {/* Delete Button */}

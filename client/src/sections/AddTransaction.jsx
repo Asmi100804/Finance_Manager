@@ -70,9 +70,9 @@ function AddTransaction() {
   return (
     <div className="w-full">
       {/* Card container */}
-      <div className="rounded-xl bg-white py-6 px-6 border border-gray-200">
+      <div className="rounded-xl bg-green-50 py-6 px-6 border border-gray-200">
         <h1 className="text-xl font-semibold mb-6">
-          <span className="text-blue-500">+</span> Add Transactions
+          <span className="text-gray-1000">+</span> Add Transactions
         </h1>
 
         {/* Form grid */}
@@ -89,7 +89,7 @@ function AddTransaction() {
               id="type"
               value={type}
               onChange={(e) => setType(e.target.value)}
-              className="pl-3 py-2.5 border border-gray-300 w-full rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-500"
+              className="pl-3 py-2.5 border border-gray-300 w-full rounded-xl focus:outline-none focus:ring-2 focus:ring-gray-1000"
               disabled={loading}
             >
               {["Expense", "Income"].map((item, index) => (
@@ -109,7 +109,7 @@ function AddTransaction() {
               Amount
             </label>
             <div className="relative">
-              <span className="absolute left-3 top-1/2 -translate-y-1/2 text-gray-500">
+              <span className="absolute left-3 top-1/2 -translate-y-1/2 text-gray-1000">
                 Rs
               </span>
               <input
@@ -117,7 +117,7 @@ function AddTransaction() {
                 placeholder="0.00"
                 value={amount}
                 onChange={(e) => setAmount(e.target.value)}
-                className="pl-10 pr-3 py-2.5 border border-gray-300 w-full rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-500"
+                className="pl-10 pr-3 py-2.5 border border-gray-300 w-full rounded-xl focus:outline-none focus:ring-2 focus:ring-gray-1000"
                 disabled={loading}
               />
             </div>
@@ -135,7 +135,7 @@ function AddTransaction() {
               id="category"
               value={category}
               onChange={(e) => setCategory(e.target.value)}
-              className="pl-3 py-2.5 border border-gray-300 w-full rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-500"
+              className="pl-3 py-2.5 border border-gray-300 w-full rounded-xl focus:outline-none focus:ring-2 focus:ring-gray-1000"
               disabled={loading}
             >
               <option value="">Select category...</option>
@@ -162,7 +162,7 @@ function AddTransaction() {
               placeholder="Transaction description"
               value={description}
               onChange={(e) => setDescription(e.target.value)}
-              className="px-3 py-2.5 border border-gray-300 w-full rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-500"
+              className="px-3 py-2.5 border border-gray-300 w-full rounded-xl focus:outline-none focus:ring-2 focus:ring-gray-1000"
               disabled={loading}
             />
           </div>
@@ -176,7 +176,7 @@ function AddTransaction() {
                 type === "Income"
                   ? "bg-green-600 hover:bg-green-700"
                   : "bg-blue-600 hover:bg-blue-700"
-              } text-white font-semibold py-2.5 rounded-xl transition cursor-pointer disabled:opacity-50 disabled:cursor-not-allowed`}
+              } text-green-50 font-semibold py-2.5 rounded-xl transition cursor-pointer disabled:opacity-50 disabled:cursor-not-allowed`}
             >
               {loading
                 ? "Loading..."

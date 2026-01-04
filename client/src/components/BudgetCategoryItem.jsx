@@ -6,12 +6,12 @@ const BudgetCategoryItem = ({ item }) => {
   const getPercentageColor = () => {
     if (100 - item.percentLeft > 100) return "text-red-500";
     if (100 - item.percentLeft >= 90) return "text-yellow-500";
-    return "text-green-500";
+    return "text-gray-1000";
   };
 
 
   return (
-    <div className="px-4 py-5 border border-gray-200 rounded-xl bg-white">
+    <div className="px-4 py-5 border border-gray-200 rounded-xl bg-green-50">
       <div className="flex items-center mb-1 justify-between gap-4 space-y-2">
         <div>
           <div>
