@@ -33,7 +33,7 @@ function SetBudgets() {
 
   return (
     <div className='w-full'>
-      <div className='rounded-xl bg-green-50 py-6 px-6 border border-gray-200'>
+      <div className='rounded-xl bg-white py-6 px-6 border border-gray-200'>
         <h1 className='text-xl font-semibold mb-6'>
           <span className='text-gray-1000'>+</span> Set Monthly Budget
         </h1>
@@ -80,7 +80,7 @@ function SetBudgets() {
           <div className='flex items-end'>
             <button
               onClick={handleSubmit}
-              className='w-full bg-blue-600 text-green-50 font-semibold py-2.5 rounded-xl hover:bg-blue-700 transition disabled:opacity-50 disabled:cursor-not-allowed'
+              className='w-full bg-blue-600 text-white font-semibold py-2.5 rounded-xl hover:bg-blue-700 transition disabled:opacity-50 disabled:cursor-not-allowed'
               disabled={loading} // disable button while loading
             >
               {loading ? 'Loading...' : '+ Set Budget'}
@@ -89,7 +89,7 @@ function SetBudgets() {
         </div>
       </div>
 
-      <div className='rounded-xl bg-green-50 py-6 px-6 border border-gray-200 mt-12'>
+      <div className='rounded-xl bg-white py-6 px-6 border border-gray-200 mt-12'>
         <h3 className='text-2xl font-semibold'>Monthly Budgets</h3>
 
         <div className='flex flex-col gap-4 mt-6'>

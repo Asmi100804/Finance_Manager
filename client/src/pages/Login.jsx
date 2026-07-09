@@ -44,16 +44,16 @@ function Login() {
   };
 
   return (
-    <div className='flex items-center justify-center min-h-screen px-6 sm:px-0 bg-gradient-to-br from-gray-100 to-green-50'>
-      <div className='bg-green-50 p-8 rounded-xl shadow-xl w-full sm:w-96 text-gray-700'>
+    <div className='flex items-center justify-center min-h-screen px-6 sm:px-0 bg-gradient-to-br from-blue-50 to-white'>
+      <div className='bg-white p-8 rounded-xl shadow-xl w-full sm:w-96 text-gray-700'>
 
         {/* Logo and Title */}
         <div className='border-b border-gray-200 px-2 py-6 mb-6'>
           <div className='flex justify-center gap-2 items-center text-3xl font-black text-gray-1000'>
-            <img src="./logo.png" className="size-12" alt="Logo" />
-            <h1>CashFlowX</h1>
+            <img src="/wallet-icon.svg" className="size-10" alt="Logo" />
+            <h1>WalletPal</h1>
           </div>
-          <p className='text-sm font-semibold mt-2 text-center'>Track Your Cash Flow</p>
+          <p className='text-sm font-semibold mt-2 text-center'>Track. Save. Grow.</p>
         </div>
 
         {/* Header */}
@@ -113,7 +113,7 @@ function Login() {
           <button
             type="submit"
             disabled={loading}
-            className='w-full py-3 rounded-lg bg-blue-600 text-green-50 font-semibold hover:bg-blue-700 transition-all disabled:opacity-50'
+            className='w-full py-3 rounded-lg bg-blue-600 text-white font-semibold hover:bg-blue-700 transition-all disabled:opacity-50'
           >
             {loading ? "Please wait..." : state === "sign-up" ? "Sign Up" : "Login"}
           </button>

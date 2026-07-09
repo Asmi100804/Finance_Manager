@@ -34,7 +34,7 @@ function BudgetCardDisplay({ item }) {
     }
 
     return (
-        <div className='bg-blue-100 flex flex-col md:flex-row justify-between items-start md:items-center px-5 py-4 rounded-xl'>
+        <div className='bg-blue-50 flex flex-col md:flex-row justify-between items-start md:items-center px-5 py-4 rounded-xl'>
   
             <div>
                 <p className='font-semibold text-xl'>{item.category}</p>

@@ -70,7 +70,7 @@ function AddTransaction() {
   return (
     <div className="w-full">
       {/* Card container */}
-      <div className="rounded-xl bg-green-50 py-6 px-6 border border-gray-200">
+      <div className="rounded-xl bg-white py-6 px-6 border border-gray-200">
         <h1 className="text-xl font-semibold mb-6">
           <span className="text-gray-1000">+</span> Add Transactions
         </h1>
@@ -176,7 +176,7 @@ function AddTransaction() {
                 type === "Income"
                   ? "bg-green-600 hover:bg-green-700"
                   : "bg-blue-600 hover:bg-blue-700"
-              } text-green-50 font-semibold py-2.5 rounded-xl transition cursor-pointer disabled:opacity-50 disabled:cursor-not-allowed`}
+              } text-white font-semibold py-2.5 rounded-xl transition cursor-pointer disabled:opacity-50 disabled:cursor-not-allowed`}
             >
               {loading
                 ? "Loading..."

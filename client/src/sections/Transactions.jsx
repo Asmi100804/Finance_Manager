@@ -47,7 +47,7 @@ function TransactionHistory() {
   return (
     <div className="w-full">
       {/* Filter Section */}
-      <div className="rounded-xl bg-green-50 p-6 border border-gray-200 mb-10">
+      <div className="rounded-xl bg-white p-6 border border-gray-200 mb-10">
         <h2 className="text-xl font-semibold mb-4 flex items-center gap-2">
           <ArrowDownUp className="text-gray-1000" size={20} /> Filter Transactions
         </h2>
@@ -93,7 +93,7 @@ function TransactionHistory() {
       </div>
 
       {/* Transaction History Section */}
-      <div className="rounded-xl bg-green-50 p-6 border border-gray-200">
+      <div className="rounded-xl bg-white p-6 border border-gray-200">
         <h3 className="text-2xl font-semibold mb-4">Transaction History</h3>
 
         <div className="flex flex-col gap-4">

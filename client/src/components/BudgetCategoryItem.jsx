@@ -11,7 +11,7 @@ const BudgetCategoryItem = ({ item }) => {
 
 
   return (
-    <div className="px-4 py-5 border border-gray-200 rounded-xl bg-green-50">
+    <div className="px-4 py-5 border border-gray-200 rounded-xl bg-white">
       <div className="flex items-center mb-1 justify-between gap-4 space-y-2">
         <div>
           <div>

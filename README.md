@@ -28,7 +28,10 @@ A full-stack finance management web application that allows users to add, track,
 - Postman (API testing)
 
 
-## 📸 Screenshots  
+## 📸 Screenshots
+
+### Login Page
+![Login](assets/login.png)
 
 ### Dashboard Overview
 ![Dashboard](assets/dashboardfmp.png)
