@@ -8,6 +8,7 @@ A full-stack finance management web application that allows users to add, track,
 - Add, edit, and delete financial transactions
 - Track 100+ transactions with budget limits
 - Transaction history with filters
+- Visualizes financial insights through a real-time Chart.js dashboard
 - Responsive design for all devices
 
 
